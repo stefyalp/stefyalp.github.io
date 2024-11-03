@@ -1,52 +1,73 @@
-/* Overall page settings */
+/* General styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f8ff; /* Light blue background */
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Header styling */
 header {
-    background-color: #6a0dad; /* Purple header */
-    color: #ffffff;
     text-align: center;
-    padding: 1.5em 0;
+    background-color: #6a0dad; /* Purple background */
+    color: white;
+    padding: 2em 0;
 }
+
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
+}
+
+.header-image img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 /* Main content styling */
 main {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 2em;
-    text-align: center;
 }
-main p {
-    font-size: 1.2em;
-    color: #333333;
+
+/* Section styling */
+section {
+    margin-bottom: 2em;
+}
+
+.intro, .travel, .learning {
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro p, .travel p, .learning p {
+    margin: 1em 0;
+}
+
+/* Travel Image styling */
+.travel-image img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 1em auto;
+    border-radius: 10px;
 }
 
 /* Footer styling */
 footer {
-    background-color: #87cefa; /* Light blue footer */
-    color: #ffffff;
     text-align: center;
-    padding: 1em 0;
+    padding: 1em;
+    background-color: #333;
+    color: white;
     font-size: 0.9em;
-}
-
-/* Button styling for links or any interactive elements */
-.button {
-    background-color: #6a0dad; /* Purple button */
-    color: #ffffff;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.button:hover {
-    background-color: #9370db; /* Light purple on hover */
+    margin-top: 2em;
 }
