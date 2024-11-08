@@ -6,6 +6,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    font-size: 1.2em; /* Larger font for readability */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -26,108 +27,4 @@ section {
     background: linear-gradient(135deg, #ffe4e1, #ffb6c1); /* Soft light pink gradient */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #333;
-    text-align: center;
-}
-
-/* Section headings */
-section h2 {
-    font-size: 1.8em;
-    color: #6a0dad;
-    margin-top: 0;
-}
-
-/* Image styling for consistency across all images */
-.header-image img, .travel-image img {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Grid Section for Links */
-.grid-section {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.grid-item {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 200px;
-    text-align: center;
-    padding: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
-}
-
-.grid-item:hover {
-    transform: scale(1.05);
-}
-
-.grid-item img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10px;
-}
-
-.grid-item h3 {
-    font-size: 1.2em;
-    margin: 0.5em 0;
-    color: #6a0dad;
-}
-
-.grid-item p {
-    color: #666;
-}
-
-/* Certifications Grid */
-.certifications-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.certification-item {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1em;
-    width: 45%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.certification-item img {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 10px;
-}
-
-/* Contact Section Links */
-.contact a {
-    color: #6a0dad;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
-    color: white;
-    font-size: 0.9em;
-    margin-top: 2em;
-}
+    color
