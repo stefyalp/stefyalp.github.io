@@ -37,6 +37,18 @@ section h2 {
     margin-top: 0;
 }
 
+/* Image styling for consistency across all images */
+.header-image img, .travel-image img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Grid Section for Links */
 .grid-section {
     display: flex;
