@@ -1,8 +1,8 @@
 /* General page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #1c1c1c; /* Dark mode background */
+    color: #f0f0f0; /* Light text for readability */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -31,13 +31,13 @@ main {
     padding: 2em;
 }
 
-/* Section styling */
+/* Section styling with light pink background */
 section {
     margin-bottom: 2em;
     padding: 1em;
-    background-color: white;
+    background-color: #ffe4e1; /* Light pink background for content blocks */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Section headings */
@@ -75,6 +75,18 @@ section h2 {
 
 .button:hover {
     background-color: #9370db;
+}
+
+/* Image styling for consistency */
+.header-image img, .travel-image img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Contact Section Links */
