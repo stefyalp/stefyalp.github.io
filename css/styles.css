@@ -31,19 +31,20 @@ main {
     padding: 2em;
 }
 
-/* Section styling with light pink background */
+/* Section styling with gradient background */
 section {
     margin-bottom: 2em;
     padding: 1em;
-    background-color: #ffe4e1; /* Light pink background for content blocks */
+    background: linear-gradient(135deg, #00a4cc, #7b2cbf, #ff0080); /* Gradient colors based on example */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #1c1c1c; /* Dark text for readability */
 }
 
 /* Section headings */
 section h2 {
     font-size: 1.8em;
-    color: #6a0dad;
+    color: #333; /* Dark gray for better contrast */
     margin-top: 0;
 }
 
