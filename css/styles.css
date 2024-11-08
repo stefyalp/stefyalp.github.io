@@ -119,13 +119,13 @@ section h2 {
 .attribution {
     text-align: center;
     font-size: 0.9em;
-    color: #e0e0e0;
+    color: #b0b0b0; /* Light gray for readability on dark background */
     margin-top: 2em;
     padding: 1em;
 }
 
 .attribution a {
-    color: #6a0dad;
+    color: #6a0dad; /* Purple for contrast */
     text-decoration: none;
 }
 
