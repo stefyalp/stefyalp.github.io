@@ -1,11 +1,12 @@
 /* General page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1c1c1c; /* Dark mode background */
-    color: #f0f0f0; /* Light text for readability */
+    background-color: #f9f9f9;
+    color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    font-size: 1.2em; /* Larger font for readability */
 }
 
 /* Header styling */
@@ -35,59 +36,71 @@ main {
 section {
     margin-bottom: 2em;
     padding: 1em;
-    background: linear-gradient(135deg, #00a4cc, #7b2cbf, #ff0080); /* Gradient colors based on example */
+    background: linear-gradient(135deg, #ffe4e1, #ffb6c1); /* Soft light pink gradient */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #1c1c1c; /* Dark text for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text for readability */
 }
 
 /* Section headings */
 section h2 {
     font-size: 1.8em;
-    color: #333; /* Dark gray for better contrast */
+    color: #6a0dad;
     margin-top: 0;
 }
 
-/* List styling for Experience and Certifications sections */
-.experience ul, .certifications ul {
-    list-style-type: none;
-    padding: 0;
+/* Grid Section for Links */
+.grid-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
 }
 
-.experience ul li, .certifications ul li {
-    margin-bottom: 1em;
-}
-
-.experience ul li strong, .certifications ul li strong {
-    color: #333;
-}
-
-/* Button styling for the GitHub link */
-.button {
-    display: inline-block;
-    padding: 0.5em 1.5em;
-    color: white;
-    background-color: #6a0dad;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 1em;
-}
-
-.button:hover {
-    background-color: #9370db;
-}
-
-/* Image styling for consistency */
-.header-image img, .travel-image img {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
+.grid-item {
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 32%;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.grid-item h3 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.grid-item p {
+    color: #666;
+}
+
+/* Certifications Grid */
+.certifications-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certification-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Section Links */
