@@ -7,7 +7,7 @@ body {
     font-size: 1.1em;
 }
 
-/* Navigation Bar Styling */
+/* Navbar Styling */
 .navbar {
     position: fixed;
     top: 0;
@@ -18,24 +18,28 @@ body {
     z-index: 1000;
 }
 
-/* Hide other sections except the active one */
-.section {
-    display: none;
+/* Section Spacing and Colors */
+section {
+    padding: 4em 2em;
+    margin-top: 2em;
+    background: linear-gradient(135deg, #ffe4e1, #ffb6c1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
 }
 
-.section.active {
-    display: block;
-    padding-top: 4em; /* Space for better section separation */
-}
-
-/* Spacing and font fixes for better readability */
+/* Enhanced Typography */
 h2 {
-    color: #ffffff;
+    color: #ff6f61;
+    font-size: 2em;
 }
 
 p {
-    color: #cccccc;
+    color: #d0d0d0;
 }
 
+/* Fixed Icon Sizes */
 .certifications-grid img {
-    max-width: 80px;
+    width: 60px;
+    height: auto;
+}
