@@ -13,106 +13,92 @@ body {
     align-items: center;
 }
 
-/* Main content styling */
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2em;
+/* Navigation Bar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-/* Section styling with gradient background */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+.navbar ul li a:hover {
+    background-color: #6a0dad;
+    border-radius: 5px;
+}
+
+/* Header Section Styling */
+header {
+    margin-top: 60px; /* Offset for fixed navbar */
+    text-align: center;
+    padding: 2em 0;
+    color: #e0e0e0;
+}
+
+.animated-text {
+    font-size: 1.5em;
+    color: #ff6f61; /* Accent color for animated text */
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+/* Section Styling */
 section {
-    margin-bottom: 2em;
-    padding: 1.5em;
-    background: linear-gradient(135deg, #ffe4e1, #ffb6c1); /* Soft light pink gradient */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #333; /* Darker text for readability on light pink background */
-    text-align: center;
-}
-
-/* Section headings */
-section h2 {
-    font-size: 1.8em;
-    color: #6a0dad; /* Purple heading for contrast */
-    margin-top: 0;
-}
-
-/* Image styling for consistency */
-.header-image img, .travel-image img {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
+    padding: 2em;
     margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Grid Section for Links */
-.grid-section {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.grid-item {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #f9f9f9;
     border-radius: 10px;
-    width: 200px;
-    text-align: center;
-    padding: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
-    color: #333;
-}
-
-.grid-item:hover {
-    transform: scale(1.05);
-}
-
-.grid-item img {
-    width: 40px; /* Fixed width for icons */
-    height: 40px;
-    margin-bottom: 10px;
-}
-
-.grid-item h3 {
-    font-size: 1.2em;
-    margin: 0.5em 0;
-    color: #6a0dad;
-}
-
-.grid-item p {
-    color: #666;
-}
-
-/* Certifications Grid */
-.certifications-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.certification-item {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1em;
-    width: 45%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: #333;
 }
 
-.certification-item img {
-    width: 30px; /* Fixed size for certification icons */
-    height: 30px;
-    margin-bottom: 10px;
+section h2 {
+    color: #6a0dad;
+    font-size: 1.8em;
+}
+
+/* Contact Form Styling */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#contact input, #contact textarea {
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contact button {
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #5a0dad;
 }
 
 /* Attribution Section Styling */
@@ -125,7 +111,7 @@ section h2 {
 }
 
 .attribution a {
-    color: #6a0dad; /* Purple for contrast */
+    color: #6a0dad;
     text-decoration: none;
 }
 
