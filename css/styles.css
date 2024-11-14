@@ -1,149 +1,28 @@
-/* General page styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e2f;
-    color: #dcdcdc;
-    line-height: 1.6;
-    font-size: 1.2em;
-    text-align: center;
+/* Cartoon Image Styling in Intro */
+.cartoon-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
-/* Navigation Bar Styling with capsule buttons */
-.navbar ul {
-    display: flex;
-    justify-content: center;
+/* Icon Styling */
+section h2 img, #contact ul li img {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Contact Icons Inline Styling */
+#contact ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-.navbar ul li {
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    padding: 10px 20px;
-    background-color: #ff6f61;
-    color: #ffffff;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.navbar ul li a:hover {
-    background-color: #e65c50;
-}
-
-/* Intro Section Styling */
-.welcome-text {
-    font-size: 2.5em;
-    color: #ff6f61;
-    margin-bottom: 10px;
-}
-
-/* Animated Text Section */
-.animated-text {
-    font-size: 2em;
-    color: #dcdcdc;
-}
-
-/* Quote Section Styling */
-.quote-section {
-    font-size: 1.5em;
-    color: #ffb6c1;
-    animation: fadeInOut 10s infinite alternate;
-}
-
-@keyframes fadeInOut {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
-/* Block Styling */
-.block {
-    background: linear-gradient(135deg, #ffefef, #ffb6c1);
-    padding: 3em;
-    margin: 2em auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #1e1e2f;
-    max-width: 900px;
-    text-align: center;
-}
-
-/* Section Headers with Icons */
-section h2 img {
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-/* Certifications Layout */
-.certifications-list {
+#contact ul li {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 20px;
-}
-
-.certification-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    width: 80%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: #333;
-}
-
-/* Image and Icon Sizes */
-.header-image img, .travel-image img, .certification-item img {
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 20px auto;
-}
-
-/* Contact Form Styling */
-#contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    background: #ffefef;
-    padding: 2em;
-    border-radius: 8px;
-}
-
-#contact input, #contact textarea {
-    padding: 0.8em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-#contact button {
-    background-color: #ff6f61;
-    color: #fff;
-    padding: 0.8em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact button:hover {
-    background-color: #d45a52;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #1e1e2f;
-    color: #dcdcdc;
-    font-size: 0.9em;
-    margin-top: 2em;
+    justify-content: center;
+    margin: 10px 0;
 }
