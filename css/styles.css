@@ -1,8 +1,8 @@
 /* General page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e2f;
-    color: #dcdcdc;
+    background-color: #1c1c1c;
+    color: #eaeaea;
     line-height: 1.6;
     font-size: 1.1em;
 }
@@ -12,128 +12,34 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #1e1e2f;
-    color: #ffffff;
+    background-color: #333;
+    color: #fff;
     padding: 1em;
-    text-align: center;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-
-.navbar ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: #a1a1d6;
-    text-decoration: none;
-}
-
-.navbar ul li a:hover {
-    color: #ff6f61;
+    z-index: 1000;
 }
 
 /* Section Spacing and Colors */
 section {
     padding: 4em 2em;
     margin-top: 2em;
-    background: #2b2b40;
+    background: linear-gradient(135deg, #ffe4e1, #ffb6c1);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #dcdcdc;
+    color: #333;
 }
 
 /* Enhanced Typography */
 h2 {
     color: #ff6f61;
     font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 p {
-    color: #c7c7c7;
+    color: #d0d0d0;
 }
 
 /* Fixed Icon Sizes */
-.certifications-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.certification-item {
-    background: #1e1e2f;
-    padding: 15px;
-    border-radius: 8px;
-    width: 45%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: #dcdcdc;
-}
-
 .certifications-grid img {
-    width: 50px;
+    width: 60px;
     height: auto;
-    margin-bottom: 10px;
-}
-
-/* Image Styling */
-.header-image img, .travel-image img {
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
-    margin: 0 auto;
-    display: block;
-}
-
-.travel-image img {
-    margin-top: 20px;
-}
-
-/* Contact Form Styling */
-#contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-#contact input, #contact textarea {
-    padding: 0.8em;
-    border: 1px solid #444;
-    border-radius: 5px;
-    width: 100%;
-    background-color: #2b2b40;
-    color: #ffffff;
-}
-
-#contact button {
-    background-color: #ff6f61;
-    color: #fff;
-    padding: 0.8em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact button:hover {
-    background-color: #d45a52;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #1e1e2f;
-    color: #dcdcdc;
-    font-size: 0.9em;
-    margin-top: 2em;
 }
