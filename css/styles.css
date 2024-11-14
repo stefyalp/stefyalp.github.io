@@ -1,10 +1,11 @@
-/* General page styling - Favorite version so far*/
+/* General page styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #1e1e2f;
     color: #dcdcdc;
     line-height: 1.6;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 /* Navbar Styling */
@@ -13,47 +14,50 @@ body {
     top: 0;
     width: 100%;
     background-color: #1e1e2f;
-    color: #ffffff;
     padding: 1em;
-    text-align: center;
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 .navbar ul li a {
+    padding: 10px 20px;
     color: #a1a1d6;
+    background-color: #2b2b40;
+    border-radius: 20px;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 .navbar ul li a:hover {
-    color: #ff6f61;
+    background-color: #ff6f61;
+    color: #ffffff;
 }
 
-/* Section Spacing and Colors */
+/* Section Styling and Pink Gradient Background */
 section {
     padding: 4em 2em;
-    margin-top: 2em;
-    background: #2b2b40;
+    margin: 2em auto;
+    background: linear-gradient(135deg, #ffe4e1, #ffb6c1);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #dcdcdc;
+    color: #1e1e2f;
+    max-width: 900px;
 }
 
 /* Enhanced Typography */
 h2 {
     color: #ff6f61;
     font-size: 2em;
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -61,27 +65,41 @@ p {
     color: #c7c7c7;
 }
 
-/* Fixed Icon Sizes */
+/* Typing Animation Customization */
+.animated-text span {
+    color: #ff6f61; /* Set "Stefania" to orange */
+}
+
+/* Intro Cartoon Image */
+.cartoon-image {
+    width: 150px;
+    margin: 20px auto;
+}
+
+.cartoon-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Certifications Grid Styling */
 .certifications-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
-    justify-content: center;
+    margin-top: 2em;
 }
 
 .certification-item {
-    background: #1e1e2f;
+    background-color: #1e1e2f;
     padding: 15px;
     border-radius: 8px;
-    width: 45%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
     color: #dcdcdc;
+    text-align: center;
 }
 
-.certifications-grid img {
-    width: 50px;
-    height: auto;
+.certification-item img {
+    width: 40px;
     margin-bottom: 10px;
 }
 
@@ -104,6 +122,9 @@ p {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    background: #2b2b40;
+    padding: 2em;
+    border-radius: 10px;
 }
 
 #contact input, #contact textarea {
@@ -111,7 +132,7 @@ p {
     border: 1px solid #444;
     border-radius: 5px;
     width: 100%;
-    background-color: #2b2b40;
+    background-color: #333;
     color: #ffffff;
 }
 
