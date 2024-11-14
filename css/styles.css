@@ -1,139 +1,136 @@
-/* General page styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e2f;
-    color: #dcdcdc;
-    line-height: 1.6;
-    font-size: 1.1em;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.2">
+    <title>Stefania Ascencio Lopez Portillo's Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-/* Navbar Styling */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #1e1e2f;
-    color: #ffffff;
-    padding: 1em;
-    text-align: center;
-}
+    <!-- Particle Background Animation -->
+    <div id="particles-js"></div>
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#repositories">GitHub Repositories</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-.navbar ul li {
-    display: inline;
-    margin: 0 15px;
-}
+    <!-- Hero Header Section -->
+    <header id="home">
+        <h1 class="welcome-text">Welcome to My Little World</h1>
+        <div class="animated-text" id="animated-text"></div>
+        
+        <!-- Quotes Section with Background Animation -->
+        <div class="quote-section">
+            <p class="quote">“Work hard in silence, let your success be your noise.” — Frank Ocean</p>
+            <p class="quote">“Your attitude, not your aptitude, will determine your altitude.” — Zig Ziglar</p>
+        </div>
 
-.navbar ul li a {
-    color: #a1a1d6;
-    text-decoration: none;
-}
+        <div class="header-image">
+            <img src="eur.jpg" alt="Travel photo of Europe">
+        </div>
+    </header>
 
-.navbar ul li a:hover {
-    color: #ff6f61;
-}
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hey there! I’m Stefania, a tech enthusiast with a mix of hobbies that keep life exciting.</p>
+            <p>I’m really into strategy games like TFT, Chess, and Civilization. Outside of gaming and coding, you’ll often find me working on a woodworking project, planning my next trip, or volunteering at a local animal shelter on weekends.</p>
+            <p>I’m a big dog lover, so spending time with the shelter animals is incredibly rewarding.</p>
+            <div class="travel-image">
+                <img src="Nippon.png" alt="Travel photo of Japan">
+            </div>
+        </section>
 
-/* Section Spacing and Colors */
-section {
-    padding: 4em 2em;
-    margin-top: 2em;
-    background: #2b2b40;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #dcdcdc;
-}
+        <!-- GitHub Repositories Section -->
+        <section id="repositories">
+            <h2>GitHub Repositories</h2>
+            <p>Explore my projects on GitHub: <a href="https://github.com/stefyalp" target="_blank">GitHub Profile</a></p>
+            <div class="animated-icon">
+                <img src="code-typing.gif" alt="Animation of cartoon typing code">
+            </div>
+        </section>
 
-/* Enhanced Typography */
-h2 {
-    color: #ff6f61;
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-}
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Details of my work experience, including software development and customer support roles.</p>
+            <iframe src="https://drive.google.com/file/d/1gMGOsHLY7jNsjoAnHe-xK08QPuXOqHVP/preview" width="100%" height="600"></iframe>
+            <p><a href="https://drive.google.com/file/d/1gMGOsHLY7jNsjoAnHe-xK08QPuXOqHVP/view?usp=drive_link" target="_blank">View/Download Full Resume</a></p>
+        </section>
 
-p {
-    color: #c7c7c7;
-}
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certifications-list">
+                <div class="certification-item">
+                    <img src="udemy.svg" alt="Udemy Icon">
+                    <h4>Introduction to Cloud Computing on AWS for Beginners [2024]</h4>
+                    <p>Issued by: Udemy</p>
+                    <p>Credential ID: UC-d9846423-2a89-4689-b9ff-1725a75924c0</p>
+                </div>
+                <!-- Additional certification items for each one -->
+            </div>
+        </section>
 
-/* Fixed Icon Sizes */
-.certifications-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <ul>
+                <li>Phone: 713-328-9170</li>
+                <li>Email: <a href="mailto:stefaniaalpg@gmail.com">stefaniaalpg@gmail.com</a></li>
+                <li>Portfolio: <a href="https://stefyalp.github.io" target="_blank">stefyalp.github.io</a></li>
+                <li>GitHub: <a href="https://github.com/stefyalp" target="_blank">github.com/stefyalp</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/stefania-ascencio" target="_blank">linkedin.com/in/stefania-ascencio</a></li>
+            </ul>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-.certification-item {
-    background: #1e1e2f;
-    padding: 15px;
-    border-radius: 8px;
-    width: 45%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: #dcdcdc;
-}
+    <footer>
+        <p>&copy; 2024 Stefania Ascencio Lopez Portillo</p>
+    </footer>
 
-.certifications-grid img {
-    width: 50px;
-    height: auto;
-    margin-bottom: 10px;
-}
+    <!-- Typed.js for Animated Text -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        new Typed("#animated-text", {
+            strings: ["Hello, I’m Stefania", "Tech Enthusiast", "Cloud Learner"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
 
-/* Image Styling */
-.header-image img, .travel-image img {
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
-    margin: 0 auto;
-    display: block;
-}
+        // Quote animation loop
+        const quotes = document.querySelectorAll('.quote');
+        let currentQuote = 0;
+        setInterval(() => {
+            quotes[currentQuote].style.display = 'none';
+            currentQuote = (currentQuote + 1) % quotes.length;
+            quotes[currentQuote].style.display = 'block';
+        }, 5000); // Change every 5 seconds
+    </script>
 
-.travel-image img {
-    margin-top: 20px;
-}
-
-/* Contact Form Styling */
-#contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-#contact input, #contact textarea {
-    padding: 0.8em;
-    border: 1px solid #444;
-    border-radius: 5px;
-    width: 100%;
-    background-color: #2b2b40;
-    color: #ffffff;
-}
-
-#contact button {
-    background-color: #ff6f61;
-    color: #fff;
-    padding: 0.8em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact button:hover {
-    background-color: #d45a52;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #1e1e2f;
-    color: #dcdcdc;
-    font-size: 0.9em;
-    margin-top: 2em;
-}
+    <!-- Particles.js for background animation -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('Particles.js loaded - interactive background enabled.');
+        });
+    </script>
+</body>
+</html>
