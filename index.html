@@ -11,17 +11,17 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#about" onclick="showSection('about')">About Me</a></li>
+            <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#experience" onclick="showSection('experience')">Experience</a></li>
+            <li><a href="#certifications" onclick="showSection('certifications')">Certifications</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Header Section -->
-    <header id="home">
+    <header id="home" class="section active">
         <h1>Welcome to My Little World</h1>
         <div class="animated-text" id="animated-text"></div>
         <div class="header-image">
@@ -31,8 +31,8 @@
 
     <main>
         <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
+        <section id="about" class="section">
+            <h2 class="typewriter" data-content="About Me"></h2>
             <p>Hey there! I’m Stefania, a tech enthusiast with a mix of hobbies that keep life exciting.</p>
             <p>I’m really into strategy games like TFT, Chess, and Civilization. Outside of gaming and coding, you’ll often find me working on a woodworking project, planning my next trip, or volunteering at a local animal shelter on weekends.</p>
             <p>I’m a big dog lover, so spending time with the shelter animals is incredibly rewarding.</p>
@@ -42,20 +42,20 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
+        <section id="projects" class="section">
+            <h2 class="typewriter" data-content="Projects"></h2>
             <p>Explore my projects on GitHub: <a href="https://github.com/stefyalp" target="_blank">GitHub Profile</a></p>
         </section>
 
         <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience</h2>
+        <section id="experience" class="section">
+            <h2 class="typewriter" data-content="Experience"></h2>
             <p>Details of my work experience, including software development and customer support roles. <a href="https://drive.google.com/file/d/1gMGOsHLY7jNsjoAnHe-xK08QPuXOqHVP/view?usp=drive_link" target="_blank">View/Download Resume</a></p>
         </section>
 
         <!-- Certifications Section -->
-        <section id="certifications">
-            <h2>Certifications</h2>
+        <section id="certifications" class="section">
+            <h2 class="typewriter" data-content="Certifications"></h2>
             <div class="certifications-grid">
                 <div class="certification-item">
                     <img src="udemy.svg" alt="Udemy Icon">
@@ -69,30 +69,13 @@
                     <p>Issued by: Udemy</p>
                     <p>Credential ID: UC-a540badc-d829-4203-ae0b-2f3110cdf407</p>
                 </div>
-                <div class="certification-item">
-                    <img src="udemy.svg" alt="Udemy Icon">
-                    <h4>Discover Scrum and Agile Principles, Prepare for Scrum Master Certification</h4>
-                    <p>Issued by: Udemy</p>
-                    <p>Credential ID: UC-de7672e7-17da-4e3d-bf2e-84c0b3781564</p>
-                </div>
-                <div class="certification-item">
-                    <img src="udemy.svg" alt="Udemy Icon">
-                    <h4>Learn Protractor (Angular Testing) from Scratch + Framework</h4>
-                    <p>Issued by: Udemy</p>
-                    <p>Credential ID: UC-a540badc-d829-4203-ae0b-2f3110cdf407</p>
-                </div>
-                <div class="certification-item">
-                    <img src="udemy.svg" alt="Udemy Icon">
-                    <h4>Understanding TypeScript</h4>
-                    <p>Issued by: Udemy</p>
-                    <p>Credential ID: UC-ca4c504d-fa39-4282-a7dd-ad629c8c5787</p>
-                </div>
+                <!-- Additional certification items here -->
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <section id="contact" class="section">
+            <h2 class="typewriter" data-content="Contact Me"></h2>
             <ul>
                 <li>Phone: 713-328-9170</li>
                 <li>Email: <a href="mailto:stefaniaalpg@gmail.com">stefaniaalpg@gmail.com</a></li>
@@ -109,17 +92,6 @@
         </section>
     </main>
 
-    <!-- Attribution Section -->
-    <section class="attribution">
-        <p>Icons used on this site are provided by:</p>
-        <ul>
-            <li><a href="https://simpleicons.org/icons/github.svg" target="_blank">GitHub Icon by Simple Icons</a></li>
-            <li><a href="https://iconmonstr.com/file-2-svg/" target="_blank">Resume Icon by Iconmonstr</a></li>
-            <li><a href="https://iconmonstr.com/email-1-svg/" target="_blank">Mail Icon by Iconmonstr</a></li>
-            <li><a href="https://iconmonstr.com/udemy/" target="_blank">Udemy Icon by Iconmonstr</a></li>
-        </ul>
-    </section>
-
     <footer>
         <p>&copy; 2024 Stefania Ascencio Lopez Portillo</p>
     </footer>
@@ -127,12 +99,28 @@
     <!-- Typed.js for Animated Text -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typed = new Typed("#animated-text", {
+        // Typewriter effect for hero section
+        new Typed("#animated-text", {
             strings: ["Hello, I’m Stefania", "Tech Enthusiast", "Cloud Learner"],
             typeSpeed: 50,
             backSpeed: 25,
             loop: true
         });
+
+        // Function to show only the clicked section
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+            const title = document.querySelector(`#${sectionId} h2.typewriter`);
+            if (title) {
+                title.innerHTML = '';
+                new Typed(`#${sectionId} h2.typewriter`, {
+                    strings: [title.dataset.content],
+                    typeSpeed: 50,
+                });
+            }
+        }
     </script>
 </body>
 </html>
