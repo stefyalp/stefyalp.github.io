@@ -25,11 +25,10 @@ body {
     list-style: none;
 }
 
-/* Capsule styling for menu */
 .menu li a {
     padding: 10px 20px;
     background-color: #2b2b40;
-    color: #a1a1d6;
+    color: #ff6f61;
     border-radius: 20px;
     text-decoration: none;
     font-size: 1.2em;
@@ -40,12 +39,16 @@ body {
     color: #ffffff;
 }
 
-/* Section Colors */
-.light-background {
-    background: linear-gradient(135deg, #ffffff, #f5f5f5);
-    color: #333;
+/* Home Section Styling */
+.welcome-message {
+    position: relative;
+    top: 50px;
+    font-size: 2.5em;
+    text-align: center;
+    color: #ff6f61;
 }
 
+/* Quote Section Styling */
 .dark-background {
     background: url('space.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -54,16 +57,15 @@ body {
     text-align: center;
 }
 
-/* About Section Content Side-by-Side */
+/* About Me Section Layout */
 .about-content {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
-.about-content p {
+.about-content .text {
     flex: 1;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 .travel-image {
@@ -80,7 +82,7 @@ body {
 /* Certifications Grid Styling */
 .certifications-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -88,6 +90,12 @@ body {
     width: 40px;
     height: auto;
     margin-bottom: 10px;
+}
+
+/* Orange Links */
+.orange-link {
+    color: #ff6f61;
+    text-decoration: none;
 }
 
 /* Contact Form Styling */
