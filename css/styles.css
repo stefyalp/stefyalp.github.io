@@ -39,18 +39,21 @@ body {
     color: #ffffff;
 }
 
-/* Home Section Styling */
+/* Centered Home Section Styling */
+.centered-section {
+    text-align: center;
+}
+
 .welcome-message {
     position: relative;
     top: 30px;
     font-size: 2.5em;
-    text-align: center;
     color: #ff6f61;
     margin-bottom: 30px;
 }
 
-/* Quote Section Styling */
-.dark-background {
+/* Quote Section Styling with Space Background */
+#quote-section {
     background: url('space.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #dcdcdc;
@@ -82,8 +85,8 @@ body {
 
 /* Certifications Grid Styling */
 .certifications-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
