@@ -1,120 +1,99 @@
-/* General page styling */
+/* General styling with new font */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e2f;
+    font-family: 'Poppins', sans-serif;
     color: #dcdcdc;
-    line-height: 1.6;
+    background-color: #1e1e2f;
     font-size: 1.2em;
-    text-align: center;
 }
 
-/* Navbar Styling */
+/* Responsive Navbar */
 .navbar {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #1e1e2f;
-    padding: 1em;
+    z-index: 1000;
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.menu {
     display: flex;
     justify-content: center;
+    gap: 20px;
+    list-style: none;
 }
 
-.navbar ul li {
-    margin: 0 15px;
+.menu-toggle {
+    display: none;
+    cursor: pointer;
 }
 
-.navbar ul li a {
-    padding: 10px 20px;
-    color: #a1a1d6;
-    background-color: #2b2b40;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 1.2em;
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+    .menu-toggle {
+        display: block;
+    }
 }
 
-.navbar ul li a:hover {
-    background-color: #ff6f61;
-    color: #ffffff;
+/* Typing Animation Styling */
+.animated-text span {
+    color: #ff6f61; /* Orange for your name */
+    font-size: 1.5em;
 }
 
-/* Section Styling and Pink Gradient Background */
+/* Section Colors */
+.light-background {
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    color: #333;
+}
+
+.dark-background {
+    background: url('space.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #dcdcdc;
+    padding: 4em 2em;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.dark-background h2 {
+    color: #ff6f61; /* Pinkish color for the quote */
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Smooth Section Transitions */
 section {
     padding: 4em 2em;
     margin: 2em auto;
-    background: linear-gradient(135deg, #ffe4e1, #ffb6c1);
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Smooth Transition Effects for Images */
+.travel-image img, .header-image img {
+    transition: transform 0.3s ease;
+}
+
+.travel-image img:hover, .header-image img:hover {
+    transform: scale(1.05);
+}
+
+/* GIF Container Styling */
+.gif-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gif-container iframe {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #1e1e2f;
-    max-width: 900px;
-}
-
-/* Enhanced Typography */
-h2 {
-    color: #ff6f61;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-p {
-    color: #c7c7c7;
-}
-
-/* Typing Animation Customization */
-.animated-text span {
-    color: #ff6f61; /* Set "Stefania" to orange */
-}
-
-/* Intro Cartoon Image */
-.cartoon-image {
-    width: 150px;
-    margin: 20px auto;
-}
-
-.cartoon-image img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-/* Certifications Grid Styling */
-.certifications-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin-top: 2em;
-}
-
-.certification-item {
-    background-color: #1e1e2f;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #dcdcdc;
-    text-align: center;
-}
-
-.certification-item img {
-    width: 40px;
-    margin-bottom: 10px;
-}
-
-/* Image Styling */
-.header-image img, .travel-image img {
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
-    margin: 0 auto;
-    display: block;
-}
-
-.travel-image img {
-    margin-top: 20px;
 }
 
 /* Contact Form Styling */
@@ -147,14 +126,4 @@ p {
 
 #contact button:hover {
     background-color: #d45a52;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #1e1e2f;
-    color: #dcdcdc;
-    font-size: 0.9em;
-    margin-top: 2em;
 }
