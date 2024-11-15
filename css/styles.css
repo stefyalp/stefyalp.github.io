@@ -53,12 +53,23 @@ body {
 }
 
 /* Quote Section Styling with Space Background */
-#quote-section {
-    background: url('space.jpg') no-repeat center center fixed;
-    background-size: cover;
+.space-background {
+    position: relative;
     color: #dcdcdc;
     padding: 4em 2em;
     text-align: center;
+    overflow: hidden;
+}
+
+.space-background .background-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Position behind text */
+    opacity: 0.8; /* Slight transparency */
 }
 
 /* About Me Section Layout */
