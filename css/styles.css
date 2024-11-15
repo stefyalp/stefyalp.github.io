@@ -1,6 +1,7 @@
 /* General styling */
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     color: #dcdcdc;
     background-color: #1e1e2f;
     font-size: 1.2em;
@@ -53,25 +54,40 @@ body {
     text-align: center;
 }
 
-/* Smooth Section Transitions */
-section {
-    padding: 4em 2em;
-    margin: 2em auto;
+/* About Section Content Side-by-Side */
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-/* Typing Animation Customization */
-.animated-text span {
-    color: #ff6f61;
-    font-size: 1.5em;
+.about-content p {
+    flex: 1;
+    margin-right: 20px;
 }
 
-/* Smooth Transition Effects for Images */
-.travel-image img, .header-image img {
-    transition: transform 0.3s ease;
+.travel-image {
+    flex: 1;
+    margin-left: 20px;
 }
 
-.travel-image img:hover, .header-image img:hover {
-    transform: scale(1.05);
+.travel-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Certifications Grid Styling */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.certification-item img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 /* Contact Form Styling */
@@ -99,4 +115,24 @@ section {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.dark-block {
+    background-color: #2b2b40;
+    padding: 2em;
+    border-radius: 10px;
+    margin: auto;
+    width: 80%;
+}
+
+/* Smooth Section Transitions */
+section {
+    padding: 4em 2em;
+    margin: 2em auto;
+}
+
+/* Typing Animation Customization */
+.animated-text span {
+    color: #ff6f61;
+    font-size: 1.5em;
 }
