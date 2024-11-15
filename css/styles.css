@@ -42,10 +42,11 @@ body {
 /* Home Section Styling */
 .welcome-message {
     position: relative;
-    top: 50px;
+    top: 30px;
     font-size: 2.5em;
     text-align: center;
     color: #ff6f61;
+    margin-bottom: 30px;
 }
 
 /* Quote Section Styling */
@@ -82,14 +83,17 @@ body {
 /* Certifications Grid Styling */
 .certifications-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
-.certification-item img {
-    width: 40px;
-    height: auto;
-    margin-bottom: 10px;
+.certification-item {
+    background-color: #2b2b40;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #dcdcdc;
+    text-align: center;
 }
 
 /* Orange Links */
