@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,8 @@
     <!-- Particle Background Animation -->
     <div id="particles-js"></div>
 
-    <!-- Responsive Navbar -->
+    <!-- Navbar with Capsules -->
     <nav class="navbar">
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -34,7 +33,7 @@
         </div>
     </header>
 
-    <!-- Quote Section with Background Image -->
+    <!-- Quote Section with Space Background Image -->
     <section id="quote-section" class="dark-background">
         <h2>"Work hard in silence, let your success be your noise."</h2>
     </section>
@@ -50,12 +49,34 @@
         </div>
     </section>
 
-    <!-- Projects Section with GIF -->
+    <!-- Projects Section with Typing GIF -->
     <section id="projects" class="dark-background">
         <h2>Projects</h2>
         <p>Explore my projects on GitHub: <a href="https://github.com/stefyalp" target="_blank">GitHub Profile</a></p>
         <div class="gif-container">
             <iframe src="https://giphy.com/embed/i229PTC8BKt9V9RnwZ" width="300" height="300" frameBorder="0" allowFullScreen></iframe>
+        </div>
+    </section>
+
+    <!-- Experience Section with Resume Embedded -->
+    <section id="experience" class="light-background">
+        <h2>Experience</h2>
+        <p>Details of my work experience, including software development and customer support roles.</p>
+        <iframe src="https://drive.google.com/file/d/1gMGOsHLY7jNsjoAnHe-xK08QPuXOqHVP/preview" width="100%" height="600"></iframe>
+        <p><a href="https://drive.google.com/file/d/1gMGOsHLY7jNsjoAnHe-xK08QPuXOqHVP/view?usp=drive_link" target="_blank">View/Download Full Resume</a></p>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="dark-background">
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            <div class="certification-item">
+                <img src="udemy.svg" alt="Udemy Icon">
+                <h4>Introduction to Cloud Computing on AWS for Beginners [2024]</h4>
+                <p>Issued by: Udemy</p>
+                <p>Credential ID: UC-d9846423-2a89-4689-b9ff-1725a75924c0</p>
+            </div>
+            <!-- Add additional certifications as needed -->
         </div>
     </section>
 
@@ -76,5 +97,29 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Stefania Ascencio Lopez Portillo</p>
+    </footer>
+
+    <!-- Typed.js for Animated Text -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        new Typed("#animated-text", {
+            strings: ["Hello, I’m <span style='color: #ff6f61'>Stefania</span>", "Tech Enthusiast", "Cloud Learner"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
+    </script>
+
+    <!-- Particles.js for background animation -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('Particles.js loaded - interactive background enabled.');
+        });
+    </script>
 </body>
 </html>
