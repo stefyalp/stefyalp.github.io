@@ -1,4 +1,4 @@
-/* General styling with new font */
+/* General styling */
 body {
     font-family: 'Poppins', sans-serif;
     color: #dcdcdc;
@@ -6,16 +6,15 @@ body {
     font-size: 1.2em;
 }
 
-/* Responsive Navbar */
+/* Navbar */
 .navbar {
     background-color: #1e1e2f;
-    color: #ffffff;
     padding: 1em;
-    text-align: center;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    text-align: center;
 }
 
 .menu {
@@ -25,25 +24,19 @@ body {
     list-style: none;
 }
 
-.menu-toggle {
-    display: none;
-    cursor: pointer;
+/* Capsule styling for menu */
+.menu li a {
+    padding: 10px 20px;
+    background-color: #2b2b40;
+    color: #a1a1d6;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-    }
-    .menu-toggle {
-        display: block;
-    }
-}
-
-/* Typing Animation Styling */
-.animated-text span {
-    color: #ff6f61; /* Orange for your name */
-    font-size: 1.5em;
+.menu li a:hover {
+    background-color: #ff6f61;
+    color: #ffffff;
 }
 
 /* Section Colors */
@@ -58,21 +51,18 @@ body {
     color: #dcdcdc;
     padding: 4em 2em;
     text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-.dark-background h2 {
-    color: #ff6f61; /* Pinkish color for the quote */
-    font-size: 2em;
-    font-weight: 600;
 }
 
 /* Smooth Section Transitions */
 section {
     padding: 4em 2em;
     margin: 2em auto;
-    transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Typing Animation Customization */
+.animated-text span {
+    color: #ff6f61;
+    font-size: 1.5em;
 }
 
 /* Smooth Transition Effects for Images */
@@ -82,18 +72,6 @@ section {
 
 .travel-image img:hover, .header-image img:hover {
     transform: scale(1.05);
-}
-
-/* GIF Container Styling */
-.gif-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.gif-container iframe {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Contact Form Styling */
@@ -110,7 +88,6 @@ section {
     padding: 0.8em;
     border: 1px solid #444;
     border-radius: 5px;
-    width: 100%;
     background-color: #333;
     color: #ffffff;
 }
@@ -122,8 +99,4 @@ section {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#contact button:hover {
-    background-color: #d45a52;
 }
