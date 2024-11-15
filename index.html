@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.2">
     <title>Stefania Ascencio Lopez Portillo's Website</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Particle Background Animation -->
     <div id="particles-js"></div>
 
-    <!-- Navbar with Capsules -->
+    <!-- Navbar with Capsules, Mobile-friendly -->
     <nav class="navbar">
         <ul class="menu">
             <li><a href="#home">Home</a></li>
@@ -38,14 +38,16 @@
         <h2>"Work hard in silence, let your success be your noise."</h2>
     </section>
 
-    <!-- About Section with Alternating Color -->
+    <!-- About Section with Image on Right -->
     <section id="about" class="light-background">
         <h2>About Me</h2>
-        <p>Hey there! I’m Stefania, a tech enthusiast with a mix of hobbies that keep life exciting.</p>
-        <p>I’m really into strategy games like TFT, Chess, and Civilization. Outside of gaming and coding, you’ll often find me working on a woodworking project, planning my next trip, or volunteering at a local animal shelter on weekends.</p>
-        <p>I’m a big dog lover, so spending time with the shelter animals is incredibly rewarding.</p>
-        <div class="travel-image">
-            <img src="Nippon.png" alt="Travel photo of Japan">
+        <div class="about-content">
+            <p>Hey there! I’m Stefania, a tech enthusiast with a mix of hobbies that keep life exciting.</p>
+            <p>I’m really into strategy games like TFT, Chess, and Civilization. Outside of gaming and coding, you’ll often find me working on a woodworking project, planning my next trip, or volunteering at a local animal shelter on weekends.</p>
+            <p>I’m a big dog lover, so spending time with the shelter animals is incredibly rewarding.</p>
+            <div class="travel-image">
+                <img src="Nippon.png" alt="Travel photo of Japan">
+            </div>
         </div>
     </section>
 
@@ -76,26 +78,34 @@
                 <p>Issued by: Udemy</p>
                 <p>Credential ID: UC-d9846423-2a89-4689-b9ff-1725a75924c0</p>
             </div>
+            <div class="certification-item">
+                <img src="udemy.svg" alt="Udemy Icon">
+                <h4>Azure DevOps Boards for Project Managers/Analyst/Developers</h4>
+                <p>Issued by: Udemy</p>
+                <p>Credential ID: UC-a540badc-d829-4203-ae0b-2f3110cdf407</p>
+            </div>
             <!-- Add additional certifications as needed -->
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <ul>
-            <li>Phone: 713-328-9170</li>
-            <li>Email: <a href="mailto:stefaniaalpg@gmail.com">stefaniaalpg@gmail.com</a></li>
-            <li>Portfolio: <a href="https://stefyalp.github.io" target="_blank">stefyalp.github.io</a></li>
-            <li>GitHub: <a href="https://github.com/stefyalp" target="_blank">github.com/stefyalp</a></li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/stefania-ascencio" target="_blank">linkedin.com/in/stefania-ascencio</a></li>
-        </ul>
-        <form action="https://formspree.io/f/xjkvrzbg" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <!-- Contact Section with Dark Block and White Background -->
+    <section id="contact" class="light-background">
+        <div class="dark-block">
+            <h2>Contact Me</h2>
+            <ul>
+                <li>Phone: 713-328-9170</li>
+                <li>Email: <a href="mailto:stefaniaalpg@gmail.com">stefaniaalpg@gmail.com</a></li>
+                <li>Portfolio: <a href="https://stefyalp.github.io" target="_blank">stefyalp.github.io</a></li>
+                <li>GitHub: <a href="https://github.com/stefyalp" target="_blank">github.com/stefyalp</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/stefania-ascencio" target="_blank">linkedin.com/in/stefania-ascencio</a></li>
+            </ul>
+            <form action="https://formspree.io/f/xjkvrzbg" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
