@@ -1,20 +1,21 @@
-/*favorite version base*/
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.2">
     <title>Stefania Ascencio Lopez Portillo's Website</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Particle Background Animation -->
     <div id="particles-js"></div>
 
-    <!-- Navigation Bar -->
+    <!-- Responsive Navbar -->
     <nav class="navbar">
-        <ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -24,7 +25,7 @@
         </ul>
     </nav>
 
-    <!-- Hero Header Section -->
+    <!-- Hero Header Section with Typing Animation -->
     <header id="home">
         <h1>Welcome to My Little World</h1>
         <div class="animated-text" id="animated-text"></div>
@@ -33,109 +34,47 @@
         </div>
     </header>
 
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hey there! I’m Stefania, a tech enthusiast with a mix of hobbies that keep life exciting.</p>
-            <p>I’m really into strategy games like TFT, Chess, and Civilization. Outside of gaming and coding, you’ll often find me working on a woodworking project, planning my next trip, or volunteering at a local animal shelter on weekends.</p>
-            <p>I’m a big dog lover, so spending time with the shelter animals is incredibly rewarding.</p>
-            <div class="travel-image">
-                <img src="Nippon.png" alt="Travel photo of Japan">
-            </div>
-        </section>
+    <!-- Quote Section with Background Image -->
+    <section id="quote-section" class="dark-background">
+        <h2>"Work hard in silence, let your success be your noise."</h2>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Explore my projects on GitHub: <a href="https://github.com/stefyalp" target="_blank">GitHub Profile</a></p>
-        </section>
+    <!-- About Section with Alternating Color -->
+    <section id="about" class="light-background">
+        <h2>About Me</h2>
+        <p>Hey there! I’m Stefania, a tech enthusiast with a mix of hobbies that keep life exciting.</p>
+        <p>I’m really into strategy games like TFT, Chess, and Civilization. Outside of gaming and coding, you’ll often find me working on a woodworking project, planning my next trip, or volunteering at a local animal shelter on weekends.</p>
+        <p>I’m a big dog lover, so spending time with the shelter animals is incredibly rewarding.</p>
+        <div class="travel-image">
+            <img src="Nippon.png" alt="Travel photo of Japan">
+        </div>
+    </section>
 
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>Details of my work experience, including software development and customer support roles.</p>
-            <iframe src="https://drive.google.com/file/d/1gMGOsHLY7jNsjoAnHe-xK08QPuXOqHVP/preview" width="100%" height="600"></iframe>
-            <p><a href="https://drive.google.com/file/d/1gMGOsHLY7jNsjoAnHe-xK08QPuXOqHVP/view?usp=drive_link" target="_blank">View/Download Full Resume</a></p>
-        </section>
+    <!-- Projects Section with GIF -->
+    <section id="projects" class="dark-background">
+        <h2>Projects</h2>
+        <p>Explore my projects on GitHub: <a href="https://github.com/stefyalp" target="_blank">GitHub Profile</a></p>
+        <div class="gif-container">
+            <iframe src="https://giphy.com/embed/i229PTC8BKt9V9RnwZ" width="300" height="300" frameBorder="0" allowFullScreen></iframe>
+        </div>
+    </section>
 
-        <!-- Certifications Section -->
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certification-item">
-                    <img src="udemy.svg" alt="Udemy Icon">
-                    <h4>Introduction to Cloud Computing on AWS for Beginners [2024]</h4>
-                    <p>Issued by: Udemy</p>
-                    <p>Credential ID: UC-d9846423-2a89-4689-b9ff-1725a75924c0</p>
-                </div>
-                <div class="certification-item">
-                    <img src="udemy.svg" alt="Udemy Icon">
-                    <h4>Azure DevOps Boards for Project Managers/Analyst/Developers</h4>
-                    <p>Issued by: Udemy</p>
-                    <p>Credential ID: UC-a540badc-d829-4203-ae0b-2f3110cdf407</p>
-                </div>
-                <div class="certification-item">
-                    <img src="udemy.svg" alt="Udemy Icon">
-                    <h4>Discover Scrum and Agile Principles, Prepare for Scrum Master Certification</h4>
-                    <p>Issued by: Udemy</p>
-                    <p>Credential ID: UC-de7672e7-17da-4e3d-bf2e-84c0b3781564</p>
-                </div>
-                <div class="certification-item">
-                    <img src="udemy.svg" alt="Udemy Icon">
-                    <h4>Learn Protractor (Angular Testing) from Scratch + Framework</h4>
-                    <p>Issued by: Udemy</p>
-                    <p>Credential ID: UC-a540badc-d829-4203-ae0b-2f3110cdf407</p>
-                </div>
-                <div class="certification-item">
-                    <img src="udemy.svg" alt="Udemy Icon">
-                    <h4>Understanding TypeScript</h4>
-                    <p>Issued by: Udemy</p>
-                    <p>Credential ID: UC-ca4c504d-fa39-4282-a7dd-ad629c8c5787</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <ul>
-                <li>Phone: 713-328-9170</li>
-                <li>Email: <a href="mailto:stefaniaalpg@gmail.com">stefaniaalpg@gmail.com</a></li>
-                <li>Portfolio: <a href="https://stefyalp.github.io" target="_blank">stefyalp.github.io</a></li>
-                <li>GitHub: <a href="https://github.com/stefyalp" target="_blank">github.com/stefyalp</a></li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/stefania-ascencio" target="_blank">linkedin.com/in/stefania-ascencio</a></li>
-            </ul>
-            <form action="https://formspree.io/f/xjkvrzbg" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Stefania Ascencio Lopez Portillo</p>
-    </footer>
-
-    <!-- Typed.js for Animated Text -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        new Typed("#animated-text", {
-            strings: ["Hello, I’m Stefania", "Tech Enthusiast", "Cloud Learner"],
-            typeSpeed: 50,
-            backSpeed: 25,
-            loop: true
-        });
-    </script>
-
-    <!-- Particles.js for background animation -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script>
-        particlesJS.load('particles-js', 'particles.json', function() {
-            console.log('Particles.js loaded - interactive background enabled.');
-        });
-    </script>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li>Phone: 713-328-9170</li>
+            <li>Email: <a href="mailto:stefaniaalpg@gmail.com">stefaniaalpg@gmail.com</a></li>
+            <li>Portfolio: <a href="https://stefyalp.github.io" target="_blank">stefyalp.github.io</a></li>
+            <li>GitHub: <a href="https://github.com/stefyalp" target="_blank">github.com/stefyalp</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/stefania-ascencio" target="_blank">linkedin.com/in/stefania-ascencio</a></li>
+        </ul>
+        <form action="https://formspree.io/f/xjkvrzbg" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 </body>
 </html>
