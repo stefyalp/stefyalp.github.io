@@ -13,7 +13,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-WPQ7C4G0JC');
     </script>
 </head>
@@ -24,6 +23,7 @@
 
     <!-- Navbar with Capsules, Mobile-friendly -->
     <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -186,6 +186,12 @@
         particlesJS.load('particles-js', 'particles.json', function() {
             console.log('Particles.js loaded - interactive background enabled.');
         });
+    </script>
+    <!-- Expandable Menu Script -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('show');
+        }
     </script>
 </body>
 </html>
