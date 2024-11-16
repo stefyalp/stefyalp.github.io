@@ -52,6 +52,10 @@ body {
     margin-bottom: 30px;
 }
 
+.rounded-image {
+    border-radius: 10px;
+}
+
 /* Quote Section Styling with Space Background */
 .space-background {
     position: relative;
@@ -73,6 +77,11 @@ body {
     opacity: 0.8; /* Slight transparency */
 }
 
+.quote-content {
+    position: relative;
+    z-index: 1;
+}
+
 /* About Me Section Layout */
 .about-content {
     display: flex;
@@ -81,7 +90,8 @@ body {
 
 .about-content .text {
     flex: 1;
-    padding-right: 20px;
+    padding-right: 30px;
+    line-height: 1.8em;
 }
 
 .travel-image {
@@ -93,6 +103,17 @@ body {
     max-width: 80%;
     height: auto;
     border-radius: 10px;
+}
+
+/* Alternating Section Colors */
+.light-background {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.dark-background {
+    background-color: #1e1e2f;
+    color: #dcdcdc;
 }
 
 /* Certifications Grid Styling */
@@ -170,4 +191,10 @@ section {
 .animated-text span {
     color: #ff6f61;
     font-size: 1.5em;
+}
+
+.animated-author {
+    display: inline-block;
+    font-size: 1.2em;
+    color: #ff6f61;
 }
