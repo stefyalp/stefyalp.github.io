@@ -18,6 +18,14 @@ body {
     text-align: center;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 1.8em;
+    color: #ff6f61;
+    cursor: pointer;
+    padding: 10px;
+}
+
 .menu {
     display: flex;
     justify-content: center;
@@ -261,15 +269,28 @@ section {
 
 /* Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
-    /* Navbar: stack items vertically and adjust font size */
+    /* Hide menu by default and show when 'show' class is added */
     .menu {
+        display: none;
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1e1e2f;
+        text-align: center;
+        padding: 1em 0;
     }
 
-    .menu li a {
-        font-size: 1em;
-        padding: 8px 15px;
+    /* Show menu when 'show' class is applied */
+    .menu.show {
+        display: flex;
+    }
+
+    /* Display the menu toggle button on mobile */
+    .menu-toggle {
+        display: block;
     }
 
     /* General Font Sizing and Padding Adjustments */
