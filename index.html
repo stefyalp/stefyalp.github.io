@@ -25,27 +25,29 @@
     </nav>
 
     <!-- Centered Hero Header Section with Typing Animation -->
-    <header id="home" class="centered-section">
+    <header id="home" class="centered-section light-background">
         <div class="welcome-message-container">
             <h1 class="welcome-message">Welcome to My Little World</h1>
             <div class="animated-text" id="animated-text"></div>
         </div>
         <div class="header-image">
-            <img src="eur.jpg" alt="Travel photo of Europe">
+            <img src="eur.jpg" alt="Travel photo of Europe" class="rounded-image">
         </div>
     </header>
 
-    <!-- Quote Section with Space Background Image -->
+    <!-- Quote Section with Space Background Image and Animated Author Name -->
     <section id="quote-section" class="space-background">
         <div class="background-image">
             <img src="space.jpg" alt="Background image of space">
         </div>
-        <h2>"Work hard in silence, let your success be your noise."</h2>
-        <p>- Frank Ocean</p>
+        <div class="quote-content">
+            <h2>"Work hard in silence, let your success be your noise."</h2>
+            <p class="animated-author" id="animated-author">- Frank Ocean</p>
+        </div>
     </section>
 
-    <!-- About Section with Image on Right -->
-    <section id="about" class="light-background">
+    <!-- About Section with Adjusted Text Spacing -->
+    <section id="about" class="dark-background">
         <h2>About Me</h2>
         <div class="about-content">
             <div class="text">
@@ -60,7 +62,7 @@
     </section>
 
     <!-- Projects Section with Typing GIF -->
-    <section id="projects" class="dark-background">
+    <section id="projects" class="light-background">
         <h2>Projects</h2>
         <p>Explore my projects on GitHub: <a href="https://github.com/stefyalp" target="_blank" class="orange-link">GitHub Profile</a></p>
         <div class="gif-container">
@@ -69,7 +71,7 @@
     </section>
 
     <!-- Experience Section with Full-Height Resume Embed -->
-    <section id="experience" class="light-background">
+    <section id="experience" class="dark-background">
         <h2>Experience</h2>
         <p>Details of my work experience, including software development and customer support roles.</p>
         <iframe src="https://drive.google.com/file/d/1gMGOsHLY7jNsjoAnHe-xK08QPuXOqHVP/preview" width="100%" height="1000"></iframe>
@@ -77,7 +79,7 @@
     </section>
 
     <!-- Certifications Section in Vertical Rectangular Blocks -->
-    <section id="certifications" class="dark-background">
+    <section id="certifications" class="light-background">
         <h2>Certifications</h2>
         <div class="certifications-grid">
             <div class="certification-item">
@@ -114,7 +116,7 @@
     </section>
 
     <!-- Contact Section with Dark Block and White Text -->
-    <section id="contact" class="light-background">
+    <section id="contact" class="dark-background">
         <div class="dark-block">
             <h2>Contact Me</h2>
             <ul>
@@ -146,6 +148,13 @@
             typeSpeed: 50,
             backSpeed: 25,
             loop: true
+        });
+
+        new Typed("#animated-author", {
+            strings: ["- Frank Ocean"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: false
         });
     </script>
 
