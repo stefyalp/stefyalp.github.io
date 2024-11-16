@@ -64,30 +64,48 @@ h2 {
     border-radius: 10px;
 }
 
-/* Quote Section Styling with Space Background */
+/* Video Background for Sections */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+/* Quote Section Styling with Video Background */
 .space-background {
     position: relative;
     color: #dcdcdc;
     padding: 4em 2em;
     text-align: center;
     overflow: hidden;
-    min-height: 400px;
-}
-
-.space-background .background-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Position behind text */
-    opacity: 0.8; /* Slight transparency */
+    min-height: 600px;
 }
 
 .quote-content {
     position: relative;
     z-index: 1;
+}
+
+/* Projects Section with Video Background */
+.projects-background {
+    position: relative;
+    color: #333;
 }
 
 /* About Me Section Layout */
@@ -124,7 +142,7 @@ h2 {
     color: #dcdcdc;
 }
 
-/* Certifications Grid Styling with Wider Blocks */
+/* Certifications Grid Styling with Orange Titles */
 .certifications-grid {
     display: flex;
     flex-direction: column;
@@ -140,6 +158,11 @@ h2 {
     text-align: center;
     width: 75%;
     margin: auto;
+}
+
+.certification-item h4 {
+    color: #ff6f61;
+    margin: 0.5em 0;
 }
 
 .certification-item img {
